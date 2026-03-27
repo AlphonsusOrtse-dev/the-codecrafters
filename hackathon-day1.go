@@ -90,38 +90,65 @@ package main
 
 import "fmt"
 
+// func div(num1, num2 int) (int, string) {
+// 	if num1 == 0 {
+// 		return 0, "can't divide 0"
+// 	}
+
+// }
+
 func main() {
 
-	var num1 int
-	fmt.Println("enter a number:")
-	fmt.Scan(&num1)
+	for {
+		start:
+		var num1 float64
+		fmt.Println("enter a number:")
+		_, err1 := fmt.Scan(&num1)
 
-	var operation string
-	fmt.Println("select an operation")
-	fmt.Scan(&operation)
+		var num2 float64
+		fmt.Println("enter a secondnumber:")
+		_, err2 := fmt.Scan(&num2)
 
-	var num2 int
-	fmt.Println("enter a secondnumber:")
-	fmt.Scan(&num2)
-
-	if operation == "+" {
-		fmt.Println(num1 + num2)
-	}
-
-	if operation == "-" {
-		fmt.Println(num1 - num2)
-	}
-	if operation == "*" {
-		fmt.Println(num1 * num2)
-	}
-	if operation == "/" {
-		if num2 == 0 {
-			fmt.Println("Can't divide by 0")
+		if err1 != nil || err2 != nil {
+			fmt.Println("Invalid operation")
+			goto start
 		}
 
-		fmt.Println(num1 / num2)
-	} else {
-		fmt.Println("invalid operation")
-	}
+		var operation string
+		fmt.Println("select an operation (add, sub, div, mul, help, quit)")
+		fmt.Scan(&operation)
 
+
+		//for {
+			if operation == "add" {
+				fmt.Println(num1 + num2)
+				//continue
+			}
+
+			if operation == "sub" {
+				fmt.Println(num1 - num2)
+				//continue
+			}
+			if operation == "mul" {
+				fmt.Println(num1 * num2)
+				//continue
+			}
+			if operation == "div" {
+				if num2 == 0 {
+					fmt.Println("Can't divide by zero")
+					goto start
+				}
+				fmt.Println(num1 / num2)
+			}
+			if operation == "help" {
+				fmt.Println("valid operations are: add, sub, div, mul, help, quit")
+			}
+
+			if operation == "quit" {
+				fmt.Println("Thank you for operating Timeless Computers")
+				break			
+			} 
+		
+		}
 }
+
