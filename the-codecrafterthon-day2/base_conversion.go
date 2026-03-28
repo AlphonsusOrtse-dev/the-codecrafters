@@ -6,18 +6,20 @@ import (
 )
 
 var hex string
+var num string
 
-func hexToDex() {
-	fmt.Scan(&hex)
+func hexToDex(hex string) (int64, error) {
 	value, err := strconv.ParseInt(hex, 16, 64)
 	if err != nil {
-		fmt.Println("Choose a valid hexadecimal!")
-	} else {
-		fmt.Println(value)
+		return 0, err
 	}
-	
+	return value, nil
+
 }
 
 func main() {
-	hexToDex()
+	fmt.Println("enter number")
+	fmt.Scan(&num)
+	fmt.Println(hexToDex(num))
+
 }
