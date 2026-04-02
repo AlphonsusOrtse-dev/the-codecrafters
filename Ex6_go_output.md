@@ -1,4 +1,4 @@
-# Go Output Functions
+## Go Output Functions
 
 * this are functions that allow Go to print text and format data to the console.
 
@@ -22,3 +22,5 @@ func main() {
 	fmt.Printf("the %s\n", a+b)
 
 }
+
+
