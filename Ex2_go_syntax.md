@@ -7,7 +7,7 @@
 4. the your code
 
 ### For example:
-```
+```go
 package main
 
 import "fmt"

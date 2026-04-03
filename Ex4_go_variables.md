@@ -13,7 +13,7 @@
 2. name := "Alphons"---this ia called short variable declaration in Go.
 
 #### for example: 
-
+```go
 package main
 
 import "fmt"
@@ -21,14 +21,14 @@ func main() {
     var name string = "Alphons"
     fmt.Println(name)
 }
-
+```
 
 
 ### Variable Declaration Without Initial Value
 * In Go, variables declared without asigning initial values will return their  default values.
 
 #### for example:
-
+```go
 package main
 import ("fmt")
 
@@ -41,3 +41,4 @@ func main() {
   fmt.Println(b) ---output = (0)
   fmt.Println(c) ---output = (false)
 }
+```

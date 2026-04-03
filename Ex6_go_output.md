@@ -9,6 +9,7 @@
 3. Printf() - this allows users to print formatted data to the console.
 
 #### for example:
+```go
 package main
 
 import "fmt"
@@ -22,5 +23,6 @@ func main() {
 	fmt.Printf("the %s\n", a+b)
 
 }
+```
 
 

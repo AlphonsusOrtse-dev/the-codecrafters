@@ -5,6 +5,7 @@ This is a cleaner way to write long if/else chains, especially when you are comp
 * The default keyword is optional. It specifies some code to run if there is no case match.
 
 ### for example:
+```go
 package main
 
 import "fmt"
@@ -22,4 +23,5 @@ func main() {
 		fmt.Println("Just another day.")
 	}
 }
+```
 

@@ -8,6 +8,7 @@ slices are like modified arrays, but the squre brackets [] are empty. unlike arr
 * this is when you have a specific number of values you want to create a slice with
 
 #### for example:
+```go
 package main
 
 import "fmt"
@@ -19,10 +20,11 @@ func main() {
 	fmt.Printf("length: %v\n", len(mySlice))
 
 }
-
+```
 2. creating a slice fron an array
 * this is when you have a fix len of an array but still want to work with a specific number. you can use the Append keyword to add values to a slice.
 #### for example:
+```go
 package main
 
 import "fmt"
@@ -32,8 +34,10 @@ func main() {
 	mision = append(mision, "Ortse")
 	fmt.Println(mision)
 }
+```
 
 * you can also reduce the length of a slice like this:
+```go
 package main
 
 import "fmt"
@@ -43,10 +47,10 @@ func main() {
 	s = s[:len(s)-1]
 	fmt.Println(s)
 }
-
+```
 3. Using the make() Function
 * this is use when you don't have the data you want to use yet but know how much space you wil need work with. probably may want add some data later.
-
+```go
 package main
 
 import "fmt"
@@ -58,3 +62,4 @@ func main() {
 	fmt.Println(items) 
 
 }
+```

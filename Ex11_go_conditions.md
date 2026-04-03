@@ -6,6 +6,7 @@ In Go, conditions are how your program maks decisions,They allow you to run spec
 1. the if statement: It checks if a condition is true.
 
 #### for example:
+```go
 package main
 
 import "fmt"
@@ -16,11 +17,12 @@ func main() {
 		fmt.Println("you can see me")
 	}
 }
+```
 
 2. the else if: Use else if to specify a new condition to test, if the first condition is false
 
 #### for example:
-
+```go
 package main
 
 import "fmt"
@@ -33,11 +35,12 @@ func main() {
 		fmt.Println("you can see")
 	}
 }
+```
 
 3. else statement: Use else to specify a block of code to be executed, if the same condition is false
 
 #### for example:
-
+```go
 package main
 
 import "fmt"
@@ -52,4 +55,4 @@ func main() {
 		fmt.Println("I can't come and kill myself")
 	}
 }
-
+```

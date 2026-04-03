@@ -10,7 +10,7 @@ Go Data Type is a concept in Golang that tell the computer what kind of data a v
 4. float64: prints decimal values.
 
 #### For example:
-
+```go
 package main
 
 import "fmt"
@@ -23,3 +23,4 @@ func main() {
 	fmt.Printf("Is it %t that the %s has ony %d sits in the front?\n", isTrue, name, num)
 
 }
+```
