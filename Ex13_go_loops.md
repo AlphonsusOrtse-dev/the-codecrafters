@@ -22,3 +22,21 @@ for i := 0; i < 3; i++ {
         fmt.Println(i, j)
     }
 }
+
+
+### The Range Keyword
+* The range keyword is used to iterate through the elements of an array, slice or map and returns both the index and the value.
+
+#### for example:
+
+package main
+
+import "fmt"
+
+func main() {
+	s := []string{"welcome", "to", "the", "world", "where", "problem", "is", "your", "friend"}
+	for i, v := range s {
+		fmt.Println(i, v)
+
+	}
+}
